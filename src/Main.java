@@ -87,7 +87,7 @@ public class Main {
         System.out.println("List<Book>" + " ---> " + filterBooks);
 
 
-        //- згенерувати мапу <Person, Book>, сортировать book по названию
+        //- згенерувати мапу <Person, List<Book>>, сортировать book по названию
         Map<Person, List<Book>> sortedBooks = personList.stream().collect(Collectors.toMap(
                 person -> person,
                 person -> {
